@@ -1,8 +1,6 @@
-import {Place} from "src/models/place";
-import {Location} from "src/models/location";
-import {Injectable} from "@angular/core";
+import {Place} from "../models/place";
+import {Location} from "../models/location";
 
-@Injectable()
 export class PlacesService {
     private places: Place[] = [];
 

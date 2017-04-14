@@ -4,7 +4,7 @@ import {ModalController, LoadingController, ToastController} from "ionic-angular
 import {SetLocationPage} from "../set-location/set-location";
 import {Location} from "../../models/location";
 import { Geolocation, Camera } from 'ionic-native';
-import {PlacesService} from "src/services/places";
+import {PlacesService} from "../../services/places";
 
 @Component({
   selector: 'page-add-place',

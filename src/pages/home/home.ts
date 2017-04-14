@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {AddPlacePage} from "../add-place/add-place";
-import {Place} from "src/models/place";
-import {PlacesService} from "src/services/places";
+import {Place} from "../../models/place";
+import {PlacesService} from '../../services/places';
 
 @Component({
   selector: 'page-home',
