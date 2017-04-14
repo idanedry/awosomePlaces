@@ -6,20 +6,34 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import {AddPlacePage} from "../pages/add-place/add-place";
+import {PlacePage} from "../pages/place/place";
+import {SetLocationPage} from "../pages/set-location/set-location";
+import {AgmCoreModule} from "angular2-google-maps/core";
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+      AddPlacePage,
+      PlacePage,
+      SetLocationPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AgmCoreModule.forRoot({
+        apiKey: 'AIzaSyB26KgNf4FwwNtcvE-GrdmNH5uuV_NCzVc'
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+      AddPlacePage,
+      PlacePage,
+      SetLocationPage
+
   ],
   providers: [
     StatusBar,
